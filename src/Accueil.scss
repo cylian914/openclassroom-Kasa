@@ -1,18 +1,27 @@
-
+.acc-OverImage {
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  text-shadow: 0px 4px 4px black;
+}
 
 .grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  
+
   height: 100%;
-  gap:50px;
+  gap: 50px;
   padding: 50px;
 
   background-color: #F6F6F6;
   border-radius: 25px;
 
   aspect-ratio: 1 / 1;
-  
+
+  @media screen and (max-width: 768px) {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
   & * {
     border-radius: 10px;
     width: 100%;
@@ -20,15 +29,26 @@
   }
 
   & > * {
-    & > img {
+    &>img {
       object-fit: cover;
     }
-    & > h3 {
-      position: relative;
-      left: 20px;
-      top: -70px;
-      text-align: left;
-      color: white;
+
+    &>div {
+      
+      display: flex;
+      flex-direction: row;
+
+      transform: translateY(-100%);
+
+      & > h3 {
+        margin-left: 20px;
+        width: auto;
+        height: auto;
+        align-self: flex-end;
+        position: relative;
+        text-align: bottom;
+        color: white;
+      }
     }
   }
 }

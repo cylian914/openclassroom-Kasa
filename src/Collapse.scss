@@ -1,0 +1,52 @@
+@use "./var.scss";
+
+.Collapse {
+    border-radius: 5px;
+    background-color: #F6F6F673;
+    margin-top: 30px;
+
+    &>&-multp {
+        color: white;
+        width: 100%;
+        border: none;
+        cursor: pointer;
+        background-color: var.$main-color;
+        padding: 10px 20px 10px 15px;
+        border-radius: inherit;
+        display: flex;
+        justify-content: space-between;
+
+        &>* {
+            margin: 0px;
+        }
+
+        &>.Collapse-arrow {
+            transform: rotate(90deg);
+            transition: transform 500ms;
+        }
+
+        .Collapse-arrow.Collapse-show {
+            transform: rotate(-90deg);
+            transition: transform 500ms ease;
+        }
+    }
+
+    &>&-text {
+        border-radius: inherit;
+        overflow: hidden;
+        transition: height 500ms ease;
+        & > * {
+            font-weight: 400;
+        }
+    }
+
+    &>&-show:active {
+        max-height: none;
+    }
+
+    &>&-hide {
+        max-height: 0px;
+        margin: 0px;
+    }
+
+}

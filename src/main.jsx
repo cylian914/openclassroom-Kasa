@@ -5,18 +5,19 @@ import './index.scss'
 import Accueil from './Accueil.jsx'
 import Err from './Error.jsx'
 import Propos from './Propos.jsx'
-import ImageHeader from './ImageHeader.jsx'
 import PageHeader from './PageHeader.jsx';
+import Logment from './Logement.jsx';
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
     <Routes>
       <Route element={<PageHeader />}>
-        <Route element={<ImageHeader />}>
+        <Route>
           <Route index element={<Accueil />} />
           <Route path='/propos' element={<Propos />} />
         </Route>
-        <Route path='logement/:id'/>
+        <Route path='logement/:id'element={<Logment />}/>
+        
         {/*404*/}
         <Route path='/*' element={<Err />} />
       </Route>

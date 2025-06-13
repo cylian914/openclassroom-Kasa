@@ -1,0 +1,29 @@
+.Carousel {
+    &>.OverImage {
+        .Carousel-nav {
+            display: flex;
+            justify-content: space-between;
+
+            & > * {
+                background-color: #ffffff00;
+                border: none;
+                color: white;
+                font-size: 100px;
+                cursor: pointer;
+            }
+        }
+
+        div > * {
+            background-color: #ffffff00;
+            border: none;
+            color: white;
+
+        }
+
+        .Carousel-nav-txt {
+            @media screen and (max-width: 728px) {
+                display: none;
+            }
+        }
+    }
+}

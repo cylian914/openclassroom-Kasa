@@ -20,7 +20,7 @@ function SlideShow({ images, height }) {
     return (<>
         <div className="Carousel">
             <OverImage img={images[indexImage]} height={height}>
-                {images.length >= 1 ?
+                {images.length > 1 ?
                     <>
                     <div className="OverImage-Mid Carousel-nav">
                         <button onClick={previousImage}>&lt;</button>

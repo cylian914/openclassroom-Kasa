@@ -1,9 +1,9 @@
 import { useState } from 'react'
 import onLoadedData from './data'
 import { useNavigate, useParams} from 'react-router';
-import SlideShow from './SlideShow';
+import SlideShow from '../utils/SlideShow';
 import "./Logement.scss"
-import Collapse from './Collapse';
+import Collapse from '../../utils/Colapse/Collapse';
 
 
 

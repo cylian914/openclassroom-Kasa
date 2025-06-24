@@ -1,6 +1,6 @@
 import { useState } from "react"
 import "./SlideShow.scss"
-import OverImage from "./OverImage";
+import OverImage from "../OverImage";
 
 function SlideShow({ images, height }) {
     const [indexImage, setIndexImage] = useState(0);

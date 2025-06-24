@@ -2,11 +2,11 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Route, Routes } from "react-router";
 import './index.scss'
-import Accueil from './Accueil.jsx'
-import Err from './Error.jsx'
-import Propos from './Propos.jsx'
-import PageHeader from './PageHeader.jsx';
-import Logment from './Logement.jsx';
+import Accueil from './pages/Acceuil/Accueil.jsx'
+import Err from './pages/Error/Error.jsx'
+import Propos from './pages/Propos/Propos.jsx'
+import PageHeader from './pages/Header/PageHeader.jsx';
+import Logment from './pages/Logement/Logement.jsx';
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>

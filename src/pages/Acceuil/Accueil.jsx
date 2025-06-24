@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Link } from 'react-router'
 import './Accueil.scss'
 import onLoadedData from '../../Data/data'
-import OverImage from '../../OverImage';
+import OverImage from '../../utils/OverImage/OverImage';
 
 
 

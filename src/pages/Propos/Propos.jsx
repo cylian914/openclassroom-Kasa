@@ -1,4 +1,4 @@
-import Collapse from "./Collapse"
+import Collapse from "../../utils/Colapse/Collapse"
 import "./Propos.scss"
 
 function Propos() {

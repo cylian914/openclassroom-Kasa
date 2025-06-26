@@ -14,7 +14,7 @@ function Accueil() {
 
   return (
     <>
-    <OverImage height="20vh" img={"src/assets/AccueilBgImg.png"}>
+    <OverImage img={"src/assets/AccueilBgImg.png"}>
       <h2 className='OverImage-Mid acc-OverImage'>Chez vous, partout et ailleurs</h2>
     </OverImage>
       <div className="grid">

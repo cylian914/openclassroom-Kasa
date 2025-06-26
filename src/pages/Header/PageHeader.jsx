@@ -12,7 +12,7 @@ function PageHeader() {
     </header>
     <div id="actualPage">
       <Outlet />
-    </div>
+    </div> 
     </>)
 }
 

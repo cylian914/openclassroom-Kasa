@@ -12,7 +12,7 @@ function Collapse({ title, children }) {
         <div className="Collapse">
             <button className="Collapse-multp" onClick={changeState}>
                 <h2 className="Collapse-title">{title}</h2>
-                <h2 className={"Collapse-arrow Collapse-" + active}>&lt;</h2>
+                <img src="/src/assets/ArrowCollapse.png" className={"Collapse-arrow Collapse-" + active}></img>
             </button>
             <div className={"Collapse-text Collapse-" + active}>{children}</div>
         </div>

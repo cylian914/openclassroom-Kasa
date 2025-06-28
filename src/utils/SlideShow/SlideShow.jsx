@@ -20,17 +20,15 @@ function SlideShow({ images, height }) {
     return (<>
         <div className="Carousel">
             <OverImage img={images[indexImage]} height={height}>
-                {images.length > 1 ?
-                    <>
-                    <div className="OverImage-Mid Carousel-nav">
-                        <button onClick={previousImage}>&lt;</button>
-                        <button onClick={nextImage}>&gt;</button>
+                { <>
+                    <div className="OverImage-Mid Carousel-nav" style={{'visibility': `${images.length > 1?"show":"hidden"}`}}>
+                        <button onClick={previousImage}><img src="/src/assets/SlideShowNav/Left.png"></img></button>
+                        <button onClick={nextImage}><img src="/src/assets/SlideShowNav/Right.png"></img></button>
                     </div>
-                    <div className="OverImage-Bottom Carousel-nav-txt">
+                    <div className="OverImage-Bottom Carousel-nav-txt" style={{'visibility': `${images.length > 1?"show":"hidden"}`}}>
                         <h3>{indexImage + 1}/{images.length}</h3>
                     </div>
-                    </>
-                    : null}
+                    </>}
             </OverImage>
         </div>
     </>)

@@ -21,12 +21,12 @@
         }
 
         &>.Collapse-arrow {
-            transform: rotate(90deg);
+            transform: rotate(0deg);
             transition: transform 500ms;
         }
 
         .Collapse-arrow.Collapse-show {
-            transform: rotate(-90deg);
+            transform: rotate(-180deg);
             transition: transform 500ms ease;
         }
     }
@@ -35,22 +35,16 @@
         border-radius: inherit;
         overflow: hidden;
 
-        transition: height 500ms ease;
 
         &>* {
             font-weight: 400;
         }
     }
 
-    &>&-show:active {
-        height: auto;
-        transition: height 500ms ease;
-    }
 
     &>&-hide {
         height: 0px;
         margin: 0px;
-        transition: height 500ms ease;
     }
 
 }

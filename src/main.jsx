@@ -5,7 +5,7 @@ import './index.scss'
 import Accueil from './pages/Acceuil/Accueil.jsx'
 import Err from './pages/Error/Error.jsx'
 import Propos from './pages/Propos/Propos.jsx'
-import PageHeader from './pages/Header/PageHeader.jsx';
+import PageHeader from './utils/Header/PageHeader.jsx';
 import Logment from './pages/Logement/Logement.jsx';
 
 createRoot(document.getElementById('root')).render(
@@ -22,5 +22,5 @@ createRoot(document.getElementById('root')).render(
         <Route path='/*' element={<Err />} />
       </Route>
     </Routes>
-  </BrowserRouter>,
+  </BrowserRouter>
 )

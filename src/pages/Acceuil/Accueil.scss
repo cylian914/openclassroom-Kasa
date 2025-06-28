@@ -1,12 +1,13 @@
-.acc-OverImage {
-  color: white;
-  text-shadow: 0px 4px 4px black,
-              -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-}
+@use "../../utils/Banner/imageBanner.scss";
 
 .OverImage {
-  height: calc(100%/calc(1240/223));
+  height: imageBanner.$height;
   margin-bottom: 50px;
+
+  .OverImage-chld-container {
+    backdrop-filter: brightness(70%);  
+  }
+
 }
 
 .grid {
@@ -39,18 +40,17 @@
 
     &>div {
       
+      background-image: linear-gradient(transparent, rgba(10, 10, 10, 1));
       display: flex;
-      flex-direction: row;
 
       transform: translateY(-100%);
 
       & > h3 {
+        width: 100%;
         margin-left: 20px;
-        width: auto;
+        margin-right: 20px;
         height: auto;
         align-self: flex-end;
-        position: relative;
-        text-align: bottom;
         color: white;
       }
     }

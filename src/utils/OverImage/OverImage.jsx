@@ -1,9 +1,11 @@
 import "./OverImage.scss"
 
-function OverImage({img, height, width, lazy, children}) { 
+function OverImage({img, children}) { 
     return (<>
     <div className="OverImage" style={{"backgroundImage" : `url(${img})`}}>
-        {children}
+        <div className="OverImage-chld-container">
+            {children}
+        </div>
     </div>
     </>)
 }
